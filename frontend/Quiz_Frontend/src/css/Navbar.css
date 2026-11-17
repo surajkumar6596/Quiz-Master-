@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:rgb(155, 35, 35);
+  color: white;
+}
+.logo_icon {
+  width: 60px;
+  height: 60px;
+}
+.logo_title .linkdIn_id {
+  color: green;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav_link {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.page_option {
+  border: 1px solid white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 40px;
+  padding: 0 5px;
+  border-radius: 12px;
+}
+
+.user_btn {
+  display: flex;
+  padding: 5px 5px;
+  border-radius: 10px;
+  gap: 5px;
+  color: rgb(243, 16, 16);
+  cursor: pointer;
+}
+.user_btn:hover {
+  background: gray;
+  color: white;
+}
+
+.profile {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 18px;
+
+  
+}
+
+.avatar{
+  border: 2px solid green;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #683d3d;
+}
+
+
+.user_mode {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile svg {
+  width: 27px;
+  height: 27px;
+}
+.profile a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}

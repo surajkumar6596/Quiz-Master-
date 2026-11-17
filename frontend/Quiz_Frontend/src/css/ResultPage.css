@@ -1,0 +1,119 @@
+.result_page{
+    background: rgb(207, 180, 180);
+    margin-top: 72px;
+    padding: 5px;
+}
+.greetin_page {
+  background: #d69090;
+  width: 900px;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.greetin_page p {
+  font-size: 21px;
+  color: #5f0303;
+}
+.greetin_page h2 {
+  color: white;
+  font-size: 30px;
+}
+.award_icon {
+  color: green;
+  font-size: 78px;
+}
+.score_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 80px;
+  margin-top: 30px;
+}
+
+.try_again,
+.home_link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgb(163, 15, 15);
+  color: white;
+  border-radius: 10px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+.navigate p {
+  color: rgb(49, 9, 9);
+  font-weight: 600;
+}
+.try_again:hover,
+.home_link:hover {
+  background: rgb(151, 77, 77);
+}
+.try_again:active,
+.home_link:active {
+  transform: scale(0.96);
+}
+
+/* quiz_detail */
+.quiz_detail{
+    width: 900px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+
+}
+.quiz_detail p{
+     background: #644040;
+     color: white;
+}
+/* quiz_detail_card */
+.quiz_detail_card {
+  background: #b67474;
+  padding: 10px;
+  border-radius: 10px;
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.ques_action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ques_action p,
+.ques_action span {
+  padding: 5px 10px;
+  border: 1px solid rgb(211, 27, 27);
+  background: #cc6d6d;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.ques_opt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.a_b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(211, 27, 27);
+  background: #644040;
+  width: 48%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.ques_explain {
+  background: #644040;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(211, 27, 27);
+}

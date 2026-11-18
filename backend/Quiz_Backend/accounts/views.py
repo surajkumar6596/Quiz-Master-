@@ -4,11 +4,12 @@
 from .serializers import UserSerializer
 from .models import Users
 from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 
 class UserRegisterView(generics.CreateAPIView):
     queryset = Users.objects.all()
     serializer_class = UserSerializer
+    permission_classes = [AllowAny]
 
 
 class UserProfileViews(generics.RetrieveAPIView):

@@ -1,22 +1,33 @@
+
+
 from django.shortcuts import render
-from rest_framework import viewsets
-from .models import Quiz,Category,Option,Question,QuizAttempt
 from rest_framework import viewsets, permissions
 from rest_framework_simplejwt.authentication import JWTAuthentication
-from .serializers import OptionSerializer, QuizSerializer,CategorySerializer,QuestionSerialzer,QuizAttemptSerializer
+from .models import Quiz, Category, Option, Question, QuizAttempt
+from .serializers import (
+    OptionSerializer, 
+    QuizSerializer, 
+    CategorySerializer, 
+    QuestionSerialzer, 
+    QuizAttemptSerializer
+)
+
 # Create your views here.
 
 class CategoryViewSets(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
+    permission_classes = [permissions.AllowAny]  
 
 class QuizViewSets(viewsets.ModelViewSet):
     queryset = Quiz.objects.all()
     serializer_class = QuizSerializer
+    permission_classes = [permissions.AllowAny]  
 
 class QuestionViewSets(viewsets.ModelViewSet):
     queryset = Question.objects.all()
     serializer_class = QuestionSerialzer
+    permission_classes = [permissions.AllowAny]  
 
     def get_queryset(self):
         queryset = Question.objects.all()
@@ -28,10 +39,11 @@ class QuestionViewSets(viewsets.ModelViewSet):
             queryset = queryset.filter(quiz_category_id=category_id)
 
         return queryset
-    
+
 class OptionViewSets(viewsets.ModelViewSet):
     queryset = Option.objects.all()
     serializer_class = OptionSerializer
+    permission_classes = [permissions.AllowAny]  
 
 class QuizAttemptViewSets(viewsets.ModelViewSet):
     queryset = QuizAttempt.objects.all()

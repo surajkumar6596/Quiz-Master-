@@ -130,7 +130,7 @@ const OpenQuizPage = () => {
       }
 
       const response = await axios.post(
-        'http://127.0.0.1:8000/api/quiz_attempt/',
+        'https://quiz-master-6e29.onrender.com/api/quiz_attempt/',
         payloads,
         {headers:{
           Authorization: `Bearer ${token}`,

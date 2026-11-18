@@ -32,12 +32,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-local-development-only-key
 # DEBUG = True
 DEBUG = os.getenv("DEBUG", "True").lower() == "true"
 
-ALLOWED_HOSTS = [
-    host.strip()
-    for host in os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
-    if host.strip()
-]
-
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -87,14 +82,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "Quiz_Backend.wsgi.application"
 
 
-CORS_ALLOWED_ORIGINS = [
-    origin.strip()
-    for origin in os.getenv(
-        "CORS_ALLOWED_ORIGINS",
-        "http://localhost:5173,http://127.0.0.1:5173"
-    ).split(",")
-    if origin.strip()
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [

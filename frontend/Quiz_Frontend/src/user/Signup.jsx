@@ -37,7 +37,7 @@ const Signup = () => {
   const handleSubmit = async (e)=>{
     e.preventDefault();
    try{
-     const res = await axios.post(`http://127.0.0.1:8000/api/register/`, formData)
+     const res = await axios.post(`https://quiz-master-6e29.onrender.com/api/register/`, formData)
     console.log('Signup Successful', res.data)
     alert('Signup Successfull')
    }catch(err){

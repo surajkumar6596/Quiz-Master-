@@ -20,9 +20,9 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const categories = await axios.get(
-          "http://127.0.0.1:8000/api/categories/",
+         "https://quiz-master-6e29.onrender.com/api/categories/",
         );
-        const quizes = await axios.get("http://127.0.0.1:8000/api/quizes/");
+        const quizes = await axios.get("https://quiz-master-6e29.onrender.com/api/quizes/",);
 
         // console.log('car',categories.data)
         // console.log('quiz', quizes.data)

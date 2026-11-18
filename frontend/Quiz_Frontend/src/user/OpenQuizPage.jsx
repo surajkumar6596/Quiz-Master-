@@ -44,8 +44,8 @@ const OpenQuizPage = () => {
       try {
         setLoading(true)
         const url = targetQuizId 
-          ? `http://127.0.0.1:8000/api/question/?quiz=${targetQuizId}`
-          : "http://127.0.0.1:8000/api/question/";
+          ? `https://quiz-master-6e29.onrender.com/api/question/?quiz=${targetQuizId}`
+          : "https://quiz-master-6e29.onrender.com/api/question/";
 
         const res = await axios.get(url);
 

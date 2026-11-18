@@ -40,6 +40,7 @@ const Signup = () => {
      const res = await axios.post(`https://quiz-master-6e29.onrender.com/api/register/`, formData)
     console.log('Signup Successful', res.data)
     alert('Signup Successfull')
+    navigate('/')
    }catch(err){
     console.log('Signup error', err.response?.data || err.message)
     alert('Signup falied')
